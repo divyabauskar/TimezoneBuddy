@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 23px;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+    }
+    .profile-container {
+      max-width:500PX;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+       align-items: flex-start;
+
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    .profile-pic {
+      display: block;
+      margin: 0 auto 15px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #007bff;
+      text-align:center;
+    }
+    
+    .profile-info h2 {
+      margin: 10px 0 5px;
+      text-align: center;
+    }
+    .profile-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .profile-pic-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <a href="home1.html" class="back-button">← Back to Home</a>
+    <img src="imageprofile.png" alt="Profile Picture" class="profile-pic" >
+    <div class="profile-info">
+      <h2>Khushi Dama</h2><br><br>
+      <p>Email: khushi@example.com</p><br>
+      <p>User ID: KS2025</p><br>
+      <p>Timezone: IST (India Standard Time)</p><br>
+      <p>Country: India</p><br>
+    </div><br><br>
+    <button>Edit</button>
+  </div>
+
+</body>
+</html>
