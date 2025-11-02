@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>Terms & Conditions</title>
+    <meta charset="UTF-8">
+</head>
+<style>
+    .modal { 
+        display: none; 
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+     }
+.modal-content {
+     background: #fff; 
+     margin: 10% auto; 
+     padding: 20px; 
+     width: 80%; 
+     border-radius: 8px;
+     }
+.scroll-box { 
+    max-height: 200px; 
+    overflow-y: auto; 
+    margin-bottom: 10px; 
+}
+.close { 
+    float: right; 
+    font-size: 24px;
+    cursor: pointer; 
+}
+nav ul {
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+             float: left;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+nav ul li {
+            float: left;
+           
+
+        }
+
+nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+nav ul li a:hover {
+            background-color: #1280e7;
+        }
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms&conditions.html">Terms & Conditionss</a></li>
+        </ul>
+        </nav>
+
+<button onclick="openModal()">View Terms & Conditions</button>
+
+
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Terms & Conditions</h2>
+    <div class="scroll-box">
+      
+      <p>By using Time Zone Buddies, you agree to...
+        1. Acceptance of Terms
+By accessing or using Time Zone Buddies, you agree to comply with these Terms and Conditions. If you do not agree, please refrain from using the service.
+2. Purpose of the Service
+Time Zone Buddies is designed to help users compare global time zones, coordinate meetings, and manage schedules across regions. It is intended for personal and professional use only.
+3. User Responsibilities
+- You agree to use the service lawfully and respectfully.
+- You must not attempt to disrupt or misuse the platform (e.g., through bots, scraping, or malicious code).
+- You are responsible for the accuracy of any data you input (e.g., time zones, names, meeting details).
+4. Privacy and Data Use
+- We do not collect personal data beyond what is necessary for functionality (e.g., time zone preferences).
+- Any data shared (e.g., invite links or meeting times) will not be sold or shared with third parties.
+- For more details, refer to our Privacy Policy.
+5. Intellectual Property
+- All content, design elements, and code are the property of Time Zone Buddies unless otherwise stated.
+- You may not copy, reproduce, or redistribute any part of the service without written permission.
+6. Limitation of Liability
+- Time Zone Buddies is provided “as is.” We do not guarantee uninterrupted service or error-free results.
+- We are not liable for missed meetings, scheduling conflicts, or any damages resulting from use of the service.
+7. Modifications
+We reserve the right to update these Terms and Conditions at any time. Continued use of the service after changes implies acceptance of the updated terms.
+      </p>
+      
+    </div>
+    <label>
+      <input type="checkbox" id="agreeBox"> I agree to the Terms & Conditions
+    </label>
+    <button onclick="submitForm()">Continue</button>
+  </div>
+</div>
+<script>
+    function openModal() {
+  document.getElementById("termsModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("termsModal").style.display = "none";
+}
+function submitForm() {
+  if (document.getElementById("agreeBox").checked) {
+    alert("Thanks for agreeing!");
+    closeModal();
+  } else {
+    alert("Please agree to the terms to continue.");
+  }
+}
+</script>
+
+</body>
+
+    

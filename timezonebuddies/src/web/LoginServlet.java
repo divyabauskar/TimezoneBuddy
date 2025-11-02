@@ -21,11 +21,11 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         if (userDao.validate(username, password)) {
-            HttpSession session = request.getSession();
-            session.setAttribute("username", username);
-            response.sendRedirect("home.jsp");
+           HttpSession session = request.getSession();
+session.setAttribute("username", username);
+response.sendRedirect("yourprofile.html");
         } else {
-            response.sendRedirect("login.jsp?error=true");
+            response.sendRedirect("login.html?error=true");
         }
     }
 }
